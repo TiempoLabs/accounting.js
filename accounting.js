@@ -202,8 +202,8 @@
 				.replace(decimal, '.')      // make sure decimal point is standard
 			);
 
-		// This will fail silently which may cause trouble, let's wait and see:
-		return !isNaN(unformatted) ? unformatted : 0;
+		// Allow NaN to fall through
+		return unformatted;
 	};
 
 
