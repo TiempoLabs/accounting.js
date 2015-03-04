@@ -142,7 +142,7 @@
 			// Create and return positive, negative and zero formats:
 			return {
 				pos : format,
-				neg : format.replace("-", "").replace("%v", "-%v"),
+				neg : format.replace("-", "").replace("%s", "-%s"),
 				zero : format
 			};
 
